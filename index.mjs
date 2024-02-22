@@ -1,14 +1,17 @@
 import express from "express";
+import path from "path";
 
 const app = express();
-const PORT = 1111;
+const PORT = 8080;
+const publicPath = path();
 
-app.use(express.static("public"));
-app.get("/",(req,res)=>
-res.send(
-{
-    message:"everything is working"
-}))
-app.listen(PORT,()=>{
-    console.log("Server is running on ",PORT);
-})
+app.use(express.static(publicPath,"public"));
+app.get("/", (req, res) => {
+    res.send({
+        message: "everything is working"
+    });
+});
+
+app.listen(PORT, () => {
+    console.log("Server is running on", PORT);
+});
