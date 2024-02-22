@@ -1,16 +1,6 @@
 {
-  "background_color": "#ffffff",
-  "description": "ngrok is the fastest way to put anything on the internet with a single command.",
-  "dir": "auto",
-  "display": "standalone",
-  "name": "64b2-203-101-187-89.ngrok-free",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Practice",
-  "start_url": "/",
-  "theme_color": "#ffffff",
-  "id": "/",
-  "lang": "en",
+  "name": "Vercel",
+  "short_name": "Vercel",
   "icons": [
     {
       "src": "windows11/SmallTile.scale-100.png",
@@ -460,8 +450,18 @@
       "src": "ios/1024.png",
       "sizes": "1024x1024"
     }
-  ],
+  ]
+
+,
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "start_url": "/",
+  "lang": "en",
   "display_override": [
     "window-controls-overlay"
-  ]
+  ],
+  
+  "dir": "auto"
+    
 }

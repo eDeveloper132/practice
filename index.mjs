@@ -5,7 +5,7 @@ const app = express();
 const PORT = 8080;
 const publicPath = path();
 
-app.use(express.static(publicPath,"public"));
+app.use(express.static(publicPath.join("public")));
 app.get("/", (req, res) => {
     res.send({
         message: "everything is working"
